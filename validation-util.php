@@ -16,6 +16,15 @@ function is_email($email){
     return preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i', $email);
   }
   
+  
+/*
+* Validate Alphanumeric Characters
+*/
+  
+function isAlpha($string){
+    return ctype_alnum($string);
+}
+  
 
 
 ?>
