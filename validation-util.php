@@ -25,7 +25,9 @@ function isAlpha($string){
     return ctype_alnum($string);
 }
 
-
+/*
+* Generate random string
+*/
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = '';
