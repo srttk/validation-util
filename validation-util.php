@@ -25,6 +25,17 @@ function isAlpha($string){
     return ctype_alnum($string);
 }
 
+/*
+* Validate date (mm/dd/yyyy) format
+*/
+
+ function valid_date_mm_dd_yyyy($date=NULL){
+	if(preg_match("~^\d{1,2}([/.-])\d{1,2}\\1\d{4}$~", $date)==1){
+		list($m,$d,$y)=explode("/",$date);
+		return checkdate($m,$d,$y);
+	}
+	return FALSE;
+}
 
 
 ?>
