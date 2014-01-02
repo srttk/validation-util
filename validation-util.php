@@ -27,6 +27,7 @@ function isAlpha($string){
 
 /*
 * Validate date (mm/dd/yyyy) format
+* Not fully RegExp
 */
 
  function valid_date_mm_dd_yyyy($date=NULL){
