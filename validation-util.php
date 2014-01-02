@@ -26,6 +26,7 @@ function isAlpha($string){
 }
 
 /*
+* Jan-1-2014
 * Validate date (mm/dd/yyyy) format
 * Not fully RegExp
 */
