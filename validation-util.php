@@ -42,5 +42,11 @@ function isAlpha($string){
 //Username 
 //    /^[a-z0-9_-]{3,16}$/       Letters numbers underscore
 
+/* URL Validation */
+function valid_url($url){
+	return filter_var($url, FILTER_VALIDATE_URL);
+}
+
+
 
 ?>
