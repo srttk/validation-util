@@ -49,6 +49,8 @@ function valid_url($url){
 
 /*
 Working with wwww and http
+
+BUG:Not Accurate, only for experimental
 */
 function is_weburl($url=NULL){
 	return preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $url);
