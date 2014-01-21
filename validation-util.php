@@ -56,6 +56,16 @@ function is_weburl($url=NULL){
 	return preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $url);
 }
 
+/*
+Validate currency value format 
+	1000.00
+	102
+	1245.0
+*/
+
+function validate_currency_value_format($value=null){
+	return preg_match("/^(([^0]{1})([0-9])*|(0{1}))(\.\d{1,2})?$/",$value);
+}
 
 
 ?>
